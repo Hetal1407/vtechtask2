@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 46, 46);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    grid-gap: 0.5rem;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-areas: 'navbar navbar navbar navbar'
+                         'video video video aside'
+                         'section section section section'
+                         'footer footer footer footer';
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* border: 2px solid rebeccapurple; */
+    box-shadow: 4px 3px 10px rgb(29, 28, 28);
+}
+
+.topnav a {
+    /* display: block; */
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+  }
+
+nav{
+    grid-area: navbar;
+    text-decoration: none;
+    display:inline;
+}
+
+.navbar-brand img{
+    width: 10vw;
+    height: 6vh;
+    padding: 15px;
+    float: left;
+}
+
+.h1{
+    font-size: 1.5rem;
+}
+
+.navIcon{
+    color: whitesmoke;
+    margin: 25px 15px;
+    float: right;
+}
+
+aside{
+    grid-area: aside;
+    height: 600px;
+    width: 300px;
+    display: grid;
+    margin-top: 70px;
+}
+
+.courseItem{
+    border: 2px solid wheat;
+}
+
+video{
+    grid-area: video;
+    height: 610px;
+    width: 1150px;
+    margin-top: 70px;
+    border: 2px solid khaki;
+}
+
+section{
+    grid-area: section;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.bdr{
+    border: 2px solid rgb(247, 232, 232);
+    background-color: rgb(37, 36, 36);
+    padding:5px 20px;
+    color: cornsilk;
+}
