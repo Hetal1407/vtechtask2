@@ -28,7 +28,7 @@ body{
 .topnav a {
     /* display: block; */
     display: inline;
-    color: #f2f2f2;
+    color: whitesmoke;
     text-align: center;
     text-decoration: none;
   }
@@ -37,6 +37,7 @@ nav{
     grid-area: navbar;
     text-decoration: none;
     display:inline;
+    z-index: 100;
 }
 
 .navbar-brand img{
@@ -58,22 +59,60 @@ nav{
 
 aside{
     grid-area: aside;
-    height: 600px;
-    width: 300px;
+    height: 610px;
+    width: 355px;
     display: grid;
     margin-top: 70px;
+    overflow: auto;
+    /* border: 2px solid whitesmoke; */
+    color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .courseItem{
-    border: 2px solid wheat;
+    margin: 3px;
+    height: 60px;
+    width: 340px;
+    justify-items: center;
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'icon other other other';
+    /* box-shadow: 4px 3px 10px rgb(29, 28, 28); */
+    box-shadow: 4px 3px 10px rgb(8, 8, 8);
 }
+
+.title{
+    font-size:20px;
+    color: whitesmoke;
+}
+
+#icon{
+    grid-area: icon;
+}
+
+#header{
+    grid-area: header;
+}
+
+#other{
+    grid-area: other;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
 video{
     grid-area: video;
     height: 610px;
     width: 1150px;
     margin-top: 70px;
-    border: 2px solid khaki;
+    /* border: 2px solid whitesmoke; */
+    box-shadow: 4px 3px 10px rgb(29, 28, 28);
 }
 
 section{
@@ -85,8 +124,8 @@ footer{
 }
 
 .bdr{
-    border: 2px solid rgb(247, 232, 232);
+    /* border: 2px solid rgb(247, 232, 232); */
     background-color: rgb(37, 36, 36);
     padding:5px 20px;
-    color: cornsilk;
+    color: whitesmoke;
 }
